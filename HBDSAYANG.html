@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="musicbackground.mp3" type="audio/mpeg">
+</audio>
+
+<!-- SLIDE 1 -->
+<div id="page1" class="page active">
+    <h1>Happy Birthday 💖</h1>
+    <p>For someone very special...</p>
+   <button onclick="playMusic(); nextPage(2)">Tap Here</button>
+</div>
+
+<!-- SLIDE 2 -->
+<div id="page2" class="page">
+    <h2>Untuk kamu,</h2>
+    <h1 class="name">Winda Indriani 💖</h1>
+    <p id="text" class="romantic-text"></p>
+    <button onclick="nextPage(3)">Lanjut 💌</button>
+</div>
+
+<!-- SLIDE 3 -->
+<div id="page3" class="page">
+    <h2>Ini ada sesuatu buat kamu 💝</h2>
+
+    <div class="gift" onclick="openGift()">💖</div>
+
+    <div id="giftContent">
+        <img src="winda1.jpeg" class="photo">
+        <p>Kamu cantik banget di mataku 💖</p>
+        <button onclick="nextPage(4)">Lanjut 💖</button>
+    </div>
+</div>
+
+<!-- SLIDE 4 -->
+<div id="page4" class="page">
+    <h2>Kita 💖</h2>
+
+    <img src="winda.jpeg" class="photo">
+
+    <p class="romantic-text">
+        Aku nggak tau masa depan akan seperti apa...<br>
+        tapi satu hal yang aku yakin,<br>
+        aku ingin selalu ada kamu di dalamnya.<br><br>
+
+        Happy Birthday, Ayang 💖
+    </p>
+
+    <button onclick="nextPage(1)">Ulang dari awal 🔁</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
